@@ -42,7 +42,9 @@ Para ejecutar el proyecto requiere tener instalado:
    ```
 2. Crear la base de datos con los scripts del directorio _scriptsSQL_
    usando **phpMyAdmin** (incluido en XAMPP).
-3. Adicionar el controlador JDBC a su OS o IDE.
+3. Adicionar el controlador JDBC a su OS o IDE. Modificar el usuario y
+   la clave en el archivo **./src/MDLGestionER/dataGER.java** para
+   acceder a la base de datos.
 4. En una terminal ejecutar:
    ```
    $ make run
@@ -50,8 +52,9 @@ Para ejecutar el proyecto requiere tener instalado:
 
 ## GestionERBD Screenshots
 Capturas de pantalla del formulario.
-<img src="https://raw.githubusercontent.com/mikemolina/GestionERBD/master/misc/GestionERBD-tabRef.png" height=66%>
-<img src="https://raw.githubusercontent.com/mikemolina/GestionERBD/master/misc/GestionERBD-tabVinc.png" height=66%>
+
+<img src="https://raw.githubusercontent.com/mikemolina/GestionERBD/master/misc/GestionERBD-tabRef.png" height=50%>
+<img src="https://raw.githubusercontent.com/mikemolina/GestionERBD/master/misc/GestionERBD-tabVinc.png" height=50%>
 
 ## Licencia
 Ver COPYING para más información.
