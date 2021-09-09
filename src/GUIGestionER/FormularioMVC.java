@@ -1043,6 +1043,11 @@ public class FormularioMVC extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,
                                           "Formato de fecha debe ser YYYY-MM-DD",
                                           "Campo de fecha invalido", JOptionPane.WARNING_MESSAGE);
+        } else if( EmailEmpl.matches(".*@.*") == false ) {
+            JOptionPane.showMessageDialog(this,
+                    "El correo electrónico ingresado es invalido.\n" +
+                    "Verifique que el correo tiene el formato usuario@dominio.",
+                    "Campo de correo electrónico invalido", JOptionPane.WARNING_MESSAGE);
         } else {
             // Actualizacion del empleado
             int Confirmar = JOptionPane.showConfirmDialog(this,
@@ -1131,6 +1136,11 @@ public class FormularioMVC extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,
                                           "Formato de fecha debe ser YYYY-MM-DD",
                                           "Campo de fecha invalido", JOptionPane.WARNING_MESSAGE);
+        } else if( EmailEmpl.matches(".*@.*") == false ) {
+            JOptionPane.showMessageDialog(this,
+                    "El correo electrónico ingresado es invalido.\n" +
+                    "Verifique que el correo tiene el formato usuario@dominio.",
+                    "Campo de correo electrónico invalido", JOptionPane.WARNING_MESSAGE);
         } else {
             Persona PersonaEmplGUI = new Persona(PrimNomEmpl,SecNomEmpl,PrimApellEmpl,SecApellEmpl,DireccionEmpl);
             Ciudad CiudadEmplGUI =new Ciudad(CiudadEmpl);
